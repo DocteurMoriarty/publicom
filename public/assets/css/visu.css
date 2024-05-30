@@ -1,0 +1,80 @@
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+:root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+main {
+    min-height: 100vh;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+    color: rgb(255, 110, 42);
+}
+
+
+
+#carousel-bouton-gauche {
+
+    position: absolute;
+    left: 37.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 6%;
+    aspect-ratio: 1/1;
+}
+
+#carousel-bouton-droite {
+    position: absolute;
+    left: 66%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 6%;
+    aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 800px) {
+    .carousel-item {
+        width: 80%;
+    }
+    #carousel-bouton-droite {
+        left: 94%;
+    }
+    #carousel-bouton-gauche {
+        left: 5%;
+    }
+}
+
+f{
+    font-family: Verdana;
+    font-family: Courier;
+    font-family: 'Lucida Sans';
+
+}
